@@ -7,7 +7,7 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  background-color: papayawhip;
   color: #212121;
   line-height: 1.5;
 }
@@ -18,3 +18,34 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+  .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding-top:65px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        
+      }
+      .photo-card {
+        width:100%;
+        
+      }
+      @media screen and (min-width:768px) {
+        .photo-card {
+          width: calc((100% - 15px)/2);
+        }
+        .gallery {
+          padding-top: 65px;
+          padding-left: 20px;
+          padding-right: 20px;
+          padding-bottom: 20px;
+        }
+      }
+      @media screen and (min-width:1200px){
+        .photo-card{
+          width: calc((100% - 45px)/4);
+        }
+        
+      }
